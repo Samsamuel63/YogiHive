@@ -1,0 +1,59 @@
+.level1-container {
+    background-color: #f3f4f6;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .level1-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e63946;
+  }
+  
+  .level1-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .level1-content {
+    margin-top: 30px;
+  }
+  
+  .yoga-pose img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .btn-finish,
+  .btn-back {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-finish:hover,
+  .btn-back:hover {
+    background-color: #d62828;
+  }
+  
+  .game-over h2 {
+    font-size: 2rem;
+    color: #e63946;
+  }
+  
+  .game-over p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  

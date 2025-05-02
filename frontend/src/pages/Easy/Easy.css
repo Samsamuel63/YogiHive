@@ -1,0 +1,111 @@
+/* General Layout */
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #3b4c63;  /* Deep bluish background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+/* Backdrop for Levels Grid */
+.levels-backdrop {
+  background: rgba(52, 73, 94, 0.85);  /* Semi-transparent dark panel */
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  max-width: 1100px;
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Levels Grid - 5 Buttons Per Row */
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* Level Buttons */
+.level-button {
+  background: rgba(255, 255, 255, 0.9);
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.level-button:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Back Button Styling */
+.back-button-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .levels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

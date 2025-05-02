@@ -1,0 +1,93 @@
+/* Yoga Page Styling */
+.yoga-container {
+    background: linear-gradient(100deg, #2c3e50, #34495e);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Button Styling */
+.secondary-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin: 60px auto;
+    display: block;
+    position: relative;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-3px);
+}
+
+/* Countdown Timer */
+.starting-contdown {
+    margin: auto;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    width: max-content;
+    padding: 10px 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.starting-contdown h1 {
+    color: white;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Pose Image */
+.pose-img {
+    position: absolute;
+    right: 120px;
+    top: 80px;
+    width: 500px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Performance Display */
+.performance-container {
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+
+/* Pose Performance Card */
+.pose-performance {
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.pose-performance h4 {
+    color: white;
+    opacity: 0.9;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Webcam & Canvas */
+#webcam, #my-canvas {
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

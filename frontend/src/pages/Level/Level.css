@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Kaushan+Script&display=swap');
+
+/* General Styling */
+.level-container {
+    width: 100vw;
+    min-height: 100vh;
+    background: #3b4c63;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header Styles */
+.home-header {
+    background: linear-gradient(100deg, #2c3e50, #34495e);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 6px 12px rgba(44, 62, 80, 0.4);
+}
+
+.home-heading {
+    font-size: 54px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-header {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    line-height: 1.2;
+    padding: 8px 16px;
+}
+
+.btn-header:hover {
+    background: white;
+    color: #2c3e50;
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Level Content */
+.level-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Level Card */
+.level-card {
+    background: rgba(52, 73, 94, 0.85);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    backdrop-filter: blur(12px);
+}
+
+.level-title {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.level-subtitle {
+    color: #bdc3c7;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Yoga Pose */
+.yoga-pose {
+    margin: 30px 0;
+    position: relative;
+}
+
+.yoga-pose img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.yoga-pose img:hover {
+    transform: scale(1.02);
+}
+
+/* Buttons */
+.btn-finish,
+.btn-back {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.btn-finish:hover,
+.btn-back:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Game Over */
+.game-over {
+    background: rgba(52, 73, 94, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.game-over h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.game-over p {
+    color: #bdc3c7;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    transition: width 0.3s ease;
+}
+
+/* Timer */
+.timer {
+    font-size: 24px;
+    color: white;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Instructions */
+.instructions {
+    color: #bdc3c7;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: left;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .level-card {
+        padding: 20px;
+    }
+
+    .level-title {
+        font-size: 28px;
+    }
+
+    .level-subtitle {
+        font-size: 20px;
+    }
+
+    .btn-finish,
+    .btn-back {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+} 

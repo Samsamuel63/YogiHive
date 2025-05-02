@@ -1,0 +1,193 @@
+/* General Page Styling */
+.about-container {
+    width: 100vw;
+    min-height: 100vh;
+    background: #3b4c63; /* Slightly lighter than the header */
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-header {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.about-header h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-header p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.about-main {
+    width: 75%;
+    max-width: 1100px;
+}
+
+/* Sections Styling */
+.about-section, 
+.features-section, 
+.technology-section {
+    background: rgba(52, 73, 94, 0.85); /* Keeping it darker but distinct */
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+}
+
+.about-section h2,
+.features-section h2,
+.technology-section h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 15px rgba(44, 62, 80, 0.7);
+}
+
+.about-section p,
+.features-section ul,
+.technology-section p {
+    font-size: 20px;
+    color: white;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Features List */
+.features-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-section li {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+/* Meet the Team Section */
+.team-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-section h2{
+    color: white;
+}
+
+.team-heading {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* Team Members Styling */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.3);
+}
+
+/* Adding subtle glow effect on hover */
+.team-member::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0));
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.team-member:hover::before {
+    opacity: 1;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2c3e50;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Social Media Links */
+.social-links {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.social-links h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.social-links p {
+    color: white;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 12px;
+    transition: transform 0.2s ease-in-out;
+    font-size: 22px;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
